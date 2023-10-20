@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styling/style.css">
-    <link rel="stylesheet" type="text/css" href="styling/member.css">
     <link rel="stylesheet" href="fonts/fontawesome-free-6.4.2-web/css/all.css">
     <link rel="stylesheet" href="fonts/fontawesome-free-6.4.2-web/css/brands.css">
     <link rel="stylesheet" href="fonts/fontawesome-free-6.4.2-web/css/solid.css">
@@ -26,24 +25,31 @@
             </ul>
     
             <div id="nav-icons">
+                 
                     <i class="fa-solid fa-magnifying-glass fa-2x"></i>
     
-                    <a href=""><i class="fa-regular fa-user fa-2x"></i></a>
+                    <a href="member.html"><i class="fa-regular fa-user fa-2x"></i></a>
                     
                     <i class="fa-solid fa-cart-shopping fa-2x"></i>
             </div>
-         </nav>
-        </header>
-        <main id="Sign-up">
+        </nav>            
+    </header>
+<main>
+        <section id="category">
+            <ul>
+                <li><a href="#">Gentlemen</a></li>
+                <li><a href="#">Ladies</a></li>
+                <li><a href="#">Kids</a></li>
+            </ul>
+        </section>
+            <section id="Sign-up">
             <section class="container">
                 <h1 id="head-sign-up">SIGN UP</h1>
                 <hr>
-        
                 <section class="input">
                     <label for="email/phone">Email or Phone Number</label>
                     <input type="text" id="email/phone" name="email/phone">
                 </section>
-        
                 <section class="input">
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password">
@@ -70,8 +76,25 @@
                     </ul>
                 </section>
             </section>
-        </main>
-    </div>
+            
+        </section>
+    </main>
+    <footer>
+        
+        <section id="nyheter">
+            <button id="nyhetsbrev">Klikk her for nyhetsbrev</button>
+        </section>
+        
+        <section id="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+        </section>
+    </footer>
+    
+</div>
+    
     <script>
   let x = document.querySelector(".hamburgernav")
 let hamburgerButton = document.getElementById("HamburgerMenu")

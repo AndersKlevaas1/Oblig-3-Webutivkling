@@ -37,11 +37,13 @@ header {
     background: #fff;
 }
 
-#icons {
+/* #icons {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-}
+} */
+
+
 
 .hamburgermenu{
     background: none;
@@ -57,7 +59,7 @@ header {
 .hamburgernav{
     position:fixed;
     top: 10px;
-    margin-left: 7%;
+    margin-left: 6.5%;
     background-color: #c24040;
     display: none;
     list-style: none;
@@ -92,7 +94,7 @@ header {
 }
 
 #nav-icons {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     padding: 20px; 
@@ -114,6 +116,77 @@ header {
 nav i {
     margin-right: 10px; 
 }
+
+#category{
+    list-style: none;
+    padding: 0; 
+    display: flex;
+    justify-content: left;
+}
+
+#category a{
+    text-decoration: none;
+    width: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 1rem;
+    background-color: lightgray;
+}
+
+#category li{
+    margin: 0 3px;
+    display: inline; 
+}
+
+#category ul{
+    padding-left: 0;
+}
+
+
+
+#product-flex{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.new-arrival img{
+    height: 70%;
+    width: 70%;
+    margin: 0;
+}
+
+.double{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 1rem;
+}
+
+.bilde1{
+    display: grid;
+    justify-content: center;
+    
+}
+
+.bilde2{
+    display: grid;
+    justify-content: center;
+ 
+}
+
+
+.bilde1 img{
+    height: 100%;
+    width: 100%;
+
+}
+
+.bilde2 img{
+    height: 100%;
+    width: 100%;
+}
+
 /* hovedområde */
 .container {
     display: flex;
@@ -171,48 +244,144 @@ main h1 {
     margin-top: 20px;
 }
 
-.flex-section {
+#velkommen{
+    margin-top: 2rem;
     display: flex;
-    flex-direction: column; 
-    align-items: center;
+    justify-content: space-evenly; 
 }
 
-#picture-right{
+#velkommenbilde{
+    width: 50%;
+    height: 50%;
+}
+
+#productto {
     display: flex;
     flex-direction: row;
-    width: 300px;
-    height: 300px;
-    width: auto;
-}
-
-#right-text {
-    display: flex;
+    justify-content: center; 
+    align-items: center; 
     text-align: center;
-    max-width: 35%;
-    align-items: center;
-    flex-direction: column;
-    font-size: larger;
-    gap: 1.5vh;
+    margin-top: 2rem;
+    gap: 10%;
+}
+
+#productto img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+#producttext{
+    display: flex;
+    
+}
+
+#producttext2{
+    flex-direction: row;
+}
+
+#producttext3{
+    flex-direction: row;
 }
 
 
-#products-mid{
+ .bilder4{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
     gap: 1rem;
-    text-align: center;
-}
+} 
 
-.product {
+.column1{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 10px;
+
 }
 
-.product h4 {
-    margin: 10px 0;
+.column2{
+    display: flex;
+    flex-direction: column;
+}
+
+#bilder4to{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 50%;
+    gap: 1rem;
+}
+
+.column3{
+    display: flex;
+    flex-direction: column;
+}
+
+.column4{
+    display: flex;
+    flex-direction: column;
+}
+
+#allebilder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1rem;
+
+}
+
+#allebilder img{
+    padding: 1rem;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+
+#ourproducts{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 42px;
+}
+
+#productbottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+    gap: 1rem;
+  
+}
+
+#productbottom section{
+    
+    flex-direction: column;
+    text-align: center;
+   
+}
+
+#productbottom img {
+    max-width: 100%;
+    height: auto;
+}
+
+#newarrivals{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#foreveryone{
+    display: flex;
+    flex-direction: column;
+}
+
+#tocolumns{
+    display: flex;
+    flex-direction: row;
 }
 
 #nyhetsbrev { 
@@ -231,23 +400,96 @@ button {
     border: none;
     cursor: pointer;
     margin-top: 20px;
+    
+}
+
+.desktop, .desktopproduct {
+    display: none;
 }
 
 
-footer {
+
+#rad4, #rad4to{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    max-width: 100%;
+    height: auto;
+}
+
+#rad4 img,
+#rad4to img {
+    max-width: 100%; /* Begrens maksimal bredde for bildene til 100% av foreldrecontaineren */
+    height: auto; /* La høyden skaleres proporsjonalt med bredden */
+}
+
+#desktop{
+    display: flex;
+    flex-direction: column;
+}
+
+form select{
+width: 6%;
+margin-left: 15%;
+font-size: 24px;
+margin-bottom: 20px;
+}
+
+
+
+
+
+/* Footer område */
+
+#nyheter{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 1rem;
     grid-area: footer;
     text-align: center;
     margin-top: auto;
+
 }
 
+footer section {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+  
+
+@media only screen and (min-width: 600px) {
+    .mobile {
+        display: none !important; 
+    }
+
+    .desktop {
+        display: block !important; 
+    }
 
 
-@media only screen and (min-width:600px){
-    #grid-container{
-        grid-template-areas: "header header header" ". main ." ". nav ." "footer footer footer";
+}
+
+@media only screen and (min-width: 600px){
+
+    .mobileproduct {
+        display: none !important; 
+    }
+
+    .desktopproduct {
+        display: block !important; 
     }
 }
+
+
