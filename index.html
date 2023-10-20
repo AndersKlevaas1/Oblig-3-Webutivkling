@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styling/style.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-6.4.2-web/css/brands.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-6.4.2-web/css/solid.css">
+    <title>Oblig 3 Skobutikk</title>
+</head>
+<body>
+    <div id="gridContainer">
+        <header>
+    
+         <nav id="hambur">
+            <a href="index.html"> <i class="fa-solid fa-shoe-prints fa-2x"></i></a>
+                <button id="HamburgerMenu"
+                class="hamburgermenu"><i class="fa-solid fa-bars fa-2x"></i>
+                </button>
+                
+            <ul class="hamburgernav">
+                <li><a href="products.html">Products</a></li>
+                <li><a href="member.html">Member</a></li>
+            </ul>
+    
+            <div id="nav-icons">
+                    <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+    
+                    <a href="member.html"><i class="fa-regular fa-user fa-2x"></i></a>
+                    
+                    <i class="fa-solid fa-cart-shopping fa-2x"></i>
+            </div>
+         </nav>
+        </header>
+    <main>
+        <h1>Velkommen!</h1>
+        <section class="flex-section">
+            <section id="picture-right">
+                <section id="right-text">
+            <h2>New arrivals</h2>
+            <p>Lorem ipsum dolem durin</p>
+                </section>
+                 <img src="https://placehold.co/600x400" alt="Grå placehold 600x400">
+            </section>
+         <section id="products-mid">
+            <section>
+                <h2>Product 1</h2>
+                <img src="https://placehold.co/600x400" alt="Grå placehold 600x400">
+                <p>Lorem ipsum</p>
+            </section>
+
+            <section>
+                <h2>Product 2</h2>
+                <img src="https://placehold.co/600x400" alt="Grå placehold 600x400">
+                <p>Lorem ipsum</p>
+            </section>
+        </section>
+    </section>
+    </main>
+    <footer>
+        <button id="nyhetsbrev">Klikk her for nyhetsbrev</button>
+    </footer>
+
+</div>
+    <div id="icons">
+<!-- <a href="https://www.facebook.com"><img src="img\facebook.png" alt="Facebook icons created by Freepik - Flaticon"></a>
+<a href="https://www.instagram.com"><img src="img\instagram.png" alt="Instagram logo icons created by Freepik - Flaticon"></a>
+<a href="https://www.twitter.com"><img src="img\twitter-sign.png" alt="Twitter icons created by Dave Gandy - Flaticon"></a> -->
+</div>
+
+    <script>
+  let x = document.querySelector(".hamburgernav")
+let hamburgerButton = document.getElementById("HamburgerMenu")
+
+hamburgerButton.addEventListener("click", (e) => {
+    if (x.style.display === "block") {
+        x.style.display = "none"
+    } else {
+        x.style.display = "block"
+    }
+})
+    </script>
+</body>
+</html>
