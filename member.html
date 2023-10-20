@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styling/style.css">
+    <link rel="stylesheet" type="text/css" href="styling/member.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-6.4.2-web/css/brands.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-6.4.2-web/css/solid.css">
+    <title>Oblig 3 Skobutikk</title>
+</head>
+<body>
+    <div id="gridContainer">
+        <header>
+    
+         <nav id="hambur">
+            <a href="index.html"> <i class="fa-solid fa-shoe-prints fa-2x"></i></a>
+                <button id="HamburgerMenu"
+                class="hamburgermenu"><i class="fa-solid fa-bars fa-2x"></i>
+                </button>
+                
+            <ul class="hamburgernav">
+                <li><a href="products.html">Products</a></li>
+                <li><a href="member.html">Member</a></li>
+            </ul>
+    
+            <div id="nav-icons">
+                    <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+    
+                    <a href=""><i class="fa-regular fa-user fa-2x"></i></a>
+                    
+                    <i class="fa-solid fa-cart-shopping fa-2x"></i>
+            </div>
+         </nav>
+        </header>
+        <main id="Sign-up">
+            <section class="container">
+                <h1 id="head-sign-up">SIGN UP</h1>
+                <hr>
+        
+                <section class="input">
+                    <label for="email/phone">Email or Phone Number</label>
+                    <input type="text" id="email/phone" name="email/phone">
+                </section>
+        
+                <section class="input">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                </section>
+        
+                <section class="forgot-password">
+                    <a href="#">Forgot Password?</a>
+                </section>
+        
+                <section id="LOGIN">
+                    <button>LOGIN</button>
+                </section>
+                <hr>
+                
+                <button class="register-button">Want to become a member? Register here!</button>
+        
+                <section class="benefits">
+                    <h2 id="benefitH2">Benefits of becoming a member!</h2>
+                    <ul>
+                        <li>Get exclusive discounts!</li>
+                        <li>Free shipping!</li>
+                        <li>Get notification on sales!</li>
+                        <li>20% off your first order!</li>
+                    </ul>
+                </section>
+            </section>
+        </main>
+    </div>
+    <script>
+  let x = document.querySelector(".hamburgernav")
+let hamburgerButton = document.getElementById("HamburgerMenu")
+
+hamburgerButton.addEventListener("click", (e) => {
+    if (x.style.display === "block") {
+        x.style.display = "none"
+    } else {
+        x.style.display = "block"
+    }
+})
+    </script>
+    
+</body>
+</html>
