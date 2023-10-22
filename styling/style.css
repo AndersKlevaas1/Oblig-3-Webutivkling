@@ -11,6 +11,8 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+
 #gridContainer {
     display: grid;
     flex-direction: column;
@@ -31,10 +33,11 @@ header {
     align-items: center; 
     grid-area: header;
     width: 100%;
+    background-color: #ebebeb;
 }
 
 #HamburgerMenu{
-    background: #fff;
+    background: #ebebeb
 }
 
 /* #icons {
@@ -95,7 +98,7 @@ header {
 
 #nav-icons {
     position: fixed;
-    top: 0;
+    top: 15 px;
     right: 0;
     padding: 20px; 
     display: flex;
@@ -158,21 +161,16 @@ nav i {
 
 .double{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-self: center;
     gap: 1rem;
 }
 
-.bilde1{
+.bilde1, .bilde2{
     display: grid;
     justify-content: center;
-    
-}
-
-.bilde2{
-    display: grid;
-    justify-content: center;
- 
+    text-align: center;
+    align-items: center;
 }
 
 
@@ -250,14 +248,14 @@ main h1 {
     justify-content: space-evenly; 
 }
 
-#velkommenbilde{
+.velkommenbilde{
     width: 50%;
     height: 50%;
 }
 
 #productto {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center; 
     align-items: center; 
     text-align: center;
@@ -407,12 +405,11 @@ button {
     display: none;
 }
 
-
-
 #rad4, #rad4to{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    text-align: center;
     align-items: center;
     gap: 1rem;
     max-width: 100%;
@@ -421,8 +418,8 @@ button {
 
 #rad4 img,
 #rad4to img {
-    max-width: 100%; /* Begrens maksimal bredde for bildene til 100% av foreldrecontaineren */
-    height: auto; /* La høyden skaleres proporsjonalt med bredden */
+    max-width: 100%; 
+    height: auto; 
 }
 
 #desktop{
@@ -431,15 +428,12 @@ button {
 }
 
 form select{
-width: 6%;
+width: 8%;
 margin-left: 15%;
-font-size: 24px;
+font-size: 14px;
 margin-bottom: 20px;
+
 }
-
-
-
-
 
 /* Footer område */
 
