@@ -248,7 +248,7 @@ main h1 {
     justify-content: space-evenly; 
 }
 
-.velkommenbilde{
+#velkommenbilde{
     width: 50%;
     height: 50%;
 }
@@ -377,7 +377,7 @@ main h1 {
     flex-direction: column;
 }
 
-#tocolumns{
+.tocolumns{
     display: flex;
     flex-direction: row;
 }
