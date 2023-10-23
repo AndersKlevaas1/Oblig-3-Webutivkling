@@ -35,7 +35,9 @@ header {
 }
 
 header #ShoeStore{
-    margin-left: 400px;
+    margin-left: 0%;
+    font-size: 18px;
+    height: 35px;
 }
 
 img{
@@ -44,6 +46,11 @@ img{
 
 #HamburgerMenu{
     background: #ffebeb;
+}
+
+button, #HamburgerMenu{
+    margin: 0;
+    padding: 0%;
 }
 
 .hamburgermenu{
@@ -58,20 +65,21 @@ img{
 }
 
 .hamburgernav{
-    position:fixed;
+    position: fixed;
     top: 0px;
-    margin-left: 150px;
+    margin-left: 125px;
     background-color: #ff0000;
     display: none;
     list-style: none;
-    padding: 0%;
+    padding: 20px;
+    width: 5%;
 }
 
 .hamburgernav a{
     color: #ffffff;
     text-decoration: none;
     display: inline-block;
-    padding: 1rem;
+    padding: 10%;
 }
 
 #hambur {
