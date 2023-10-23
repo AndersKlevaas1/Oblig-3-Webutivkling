@@ -8,7 +8,8 @@ Ann-charlotte sine tidligere programmeringer og powerpointer
 Inspirasjon til box-shadow fra w3schools https://www.w3schools.com/cssref/css3_pr_box-shadow.php
 Brukt tips og triks fra w3schools sin CSS-tutorial https://www.w3schools.com/css/
 Icons er hentet fra https://fontawesome.com/
+Oswald-fonten er hentet fra google fonts https://fonts.google.com/specimen/Oswald
 
 
-# andre
+# Andre
 Jeg har brukt w3schools sin validator for å sjekke om koden er gyldig og uten errors https://validator.w3.org/
