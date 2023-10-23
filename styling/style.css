@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 body {
@@ -8,7 +9,6 @@ body {
     flex-direction: column; 
     justify-content: center;
     align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -40,14 +40,6 @@ header {
     background: #ebebeb
 }
 
-/* #icons {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-} */
-
-
-
 .hamburgermenu{
     background: none;
     border: none;
@@ -61,9 +53,9 @@ header {
 
 .hamburgernav{
     position:fixed;
-    top: 10px;
-    margin-left: 6.5%;
-    background-color: #c24040;
+    top: 0px;
+    margin-left: 150px;
+    background-color: #ff0000;
     display: none;
     list-style: none;
     padding: 0%;
@@ -79,16 +71,7 @@ header {
 #hambur {
     display: flex;
     align-items: center;
-}
-
-.LOGO{
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
-}
-
-.fa-solid fa-shoe-prints fa-2x{
-    position: relative;
+    margin-left: 10px;
 }
 
 #header-container {
@@ -175,14 +158,14 @@ nav i {
 
 
 .bilde1 img{
-    height: 100%;
-    width: 100%;
+    max-width: 100%; 
+    height: auto; 
 
 }
 
 .bilde2 img{
-    height: 100%;
-    width: 100%;
+    max-width: 100%; 
+    height: auto; 
 }
 
 /* hovedområde */
@@ -270,7 +253,10 @@ main h1 {
 
 #producttext{
     display: flex;
-    
+}
+
+.producttext p a{
+    text-decoration: none;
 }
 
 #producttext2{
@@ -288,12 +274,20 @@ main h1 {
     width: 50%;
     height: 50%;
     gap: 1rem;
+    text-align: center;
 } 
 
 .column1{
     display: flex;
     flex-direction: column;
+}
 
+.tocolumns .column1 p {
+    text-align: center;
+    padding: 0;
+    width: 50%;
+    height: 50%;
+    margin-left: 40px;
 }
 
 .column2{
@@ -380,6 +374,7 @@ main h1 {
 .tocolumns{
     display: flex;
     flex-direction: row;
+    padding: 0;
 }
 
 #nyhetsbrev { 
@@ -435,6 +430,22 @@ margin-bottom: 20px;
 
 }
 
+#ourmission h1{
+    background-color: #5c5b5b;
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#hovedtekst{
+background-color: #787878;
+padding:1rem;
+color: rgb(255, 255, 255);
+box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+text-align: center;
+}
+
 /* Footer område */
 
 #nyheter{
@@ -460,6 +471,7 @@ footer section {
     justify-content: center;
     flex-direction: row;
     gap: 1rem;
+    padding-bottom: 1rem;
 }
   
 
