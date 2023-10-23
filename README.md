@@ -3,7 +3,7 @@
 
 
 # Kilder
-Alle bilder er AI generert fra www.https://gencraft.com/generate
+Alle bilder er AI generert som tillater ikke-kommersielt bruk fra www.https://gencraft.com/generate
 Ann-charlotte sine tidligere programmeringer og powerpointer
 Inspirasjon til box-shadow fra w3schools https://www.w3schools.com/cssref/css3_pr_box-shadow.php
 Brukt tips og triks fra w3schools sin CSS-tutorial https://www.w3schools.com/css/
