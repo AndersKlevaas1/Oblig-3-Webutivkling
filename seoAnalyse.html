@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styling/style.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-6.4.2-web/css/brands.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-6.4.2-web/css/solid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <title>SEO ANALYSE</title>
+</head>
+<body>
+    <header>
+    
+        <nav id="hambur">
+           <a href="index.html"> <i class="fa-solid fa-shoe-prints fa-2x"></i></a>
+               <button id="HamburgerMenu"
+               class="hamburgermenu"><i class="fa-solid fa-bars fa-2x"></i>
+               </button>
+               
+           <ul class="hamburgernav">
+               <li><a href="products.html">Produkter</a></li>
+               <li><a href="member.html">Bli medlem</a></li>
+               <li><a href="seoAnalyse.html">SEO Analyse</a></li>
+           </ul>
+
+           <h1 id="ShoeStore"><a href="index.html">ShoeStore</a></h1>
+       </nav>
+    </header>
+<main>
+    <h1>SEO-Analyse av ShoeStore</h1>
+
+</main>
+
+<footer>
+
+</footer>
+<script>
+    let x = document.querySelector(".hamburgernav")
+  let hamburgerButton = document.getElementById("HamburgerMenu")
+  
+  hamburgerButton.addEventListener("click", (e) => {
+      if (x.style.display === "block") {
+          x.style.display = "none"
+      } else {
+          x.style.display = "block"
+      }
+  })
+      </script>
+</body>
+</html>
