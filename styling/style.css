@@ -531,4 +531,54 @@ footer section {
     }
 }
 
+/* Analyse.html */
+#statestikk{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+#statestikk p{
+    font-size: 28px;
+}
+
+#statestikk img{
+    display: flex;
+    flex-direction: column;
+    max-width: 80%; 
+    height: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+
+#analyse{
+    display: flex;
+    flex-direction:column;
+    margin: auto;
+}
+
+#analyse img, p{
+    display: flex;
+    flex-direction: column;
+    max-width: 80%; 
+    height: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+#WEBAIM{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+
+#WEBAIM img{
+    margin: auto;
+}
 
