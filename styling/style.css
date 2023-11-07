@@ -570,6 +570,22 @@ footer section {
     margin-bottom: 1rem;
 }
 
+#statestikk p{
+    font-size: 24px;
+}
+
+#statestikk span{
+    font-size: 18px;
+    text-align: center;
+}
+
+#hvorfor {
+    font-size: 20;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 1rem;
+}
+
 #WEBAIM{
     display: flex;
     flex-direction: row;
@@ -580,5 +596,14 @@ footer section {
 
 #WEBAIM img{
     margin: auto;
+    gap: 1rem;
+}
+
+.header-analyse{
+    margin-left: 1rem;
+}
+
+.analyse-tekst{
+    font-size: 20px;
 }
 
