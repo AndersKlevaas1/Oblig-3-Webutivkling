@@ -565,7 +565,6 @@ footer section {
     display: flex;
     flex-direction: column;
     max-width: 80%; 
-    height: 80%;
     margin: auto;
     margin-bottom: 1rem;
 }
@@ -607,3 +606,51 @@ footer section {
     font-size: 20px;
 }
 
+#SEO{
+     display: flex;
+    flex-direction: row;
+}
+
+#SEO p{
+    text-align: center;
+}
+
+#SEO img{
+    text-align: center;
+    margin-left: 60px;
+    gap: 1rem;
+    height: 80%;
+    width: 400px;
+}
+
+#tabell-header{
+    padding-top: 2rem;
+    margin-left: 1rem;
+}
+
+#tabell{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+#tabell th{
+    padding: 0 12rem;
+    /* padding-left: 12rem;
+    padding-right: 12rem; */
+    font-size: 24px;
+    margin: auto;
+}
+
+#tabell td{
+    text-align: center;
+}
+
+#webaim-analyse img{
+    width: 60%;
+    height: 60%;
+}
+
+.oppsummering{
+    font-size: 16px;
+}
