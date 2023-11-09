@@ -23,6 +23,20 @@ body {
 }
 /* headersection */
 
+#breadcrumbs {
+    font-size: 14px;
+    color: #333; 
+    margin-right: 1100px;
+}
+
+#breadcrumbs a {
+    text-decoration: none;
+    color: #0077cc; 
+}
+
+#breadcrumbs a:hover {
+    text-decoration: underline;
+}
 
 header {
     display: flex;
@@ -54,7 +68,7 @@ img{
 }
 
 button, #HamburgerMenu{
-    margin: 0;
+    margin-left: 15px;
     padding: 0%;
 }
 
@@ -64,21 +78,21 @@ button, #HamburgerMenu{
     cursor: pointer;
     font-size: 24px; 
     color: #000; 
-    margin-right: 10px;
     margin-top: auto;
     
 }
 
-.hamburgernav{
+.hamburgernav {
     position: fixed;
-    top: 0px;
-    margin-left: 125px;
-    background-color: #ff0000;
+    top: 60px; 
+    left: 0;
+    background-color: #043d76;
     display: none;
-    list-style: none;
-    padding: 20px;
-    text-decoration: underline;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
+
 
 .hamburgernav a{
     color: #ffffff;
@@ -87,7 +101,7 @@ button, #HamburgerMenu{
     padding: 5px;
 }
 
-#hambur {
+#mainNav {
     display: flex;
     align-items: center;
     margin-left: 10px;
@@ -100,18 +114,19 @@ button, #HamburgerMenu{
 
 #nav-icons {
     position: fixed;
-    top: 22px;
+    
     right: 0;
     padding: 1rem; 
     display: flex;
     list-style: none;
     font-size: 18px;
     margin-right: 10px;
+
 }
 
 .nav-icon {
     list-style: none;
-    padding: 0;
+    padding-bottom: 0;
     display: flex; 
     gap: 15px;
 }
@@ -119,6 +134,16 @@ button, #HamburgerMenu{
 .nav-icon li {
     margin: 0 10px; 
 }
+
+.home-link {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.home-link i{
+    font-size: 30px;
+}
+  
 
 nav i {
     margin-right: 10px; 
@@ -464,19 +489,28 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 #ourmission h2{
-    background-color: #5c5b5b;
-    color: rgb(255, 255, 255);
+    
+    color: #2a2a2a; 
+    padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     text-align: center;
-    margin-top: 60px;
+
 }
 
 #hovedtekst{
-background-color: #787878;
+
 padding: 1rem;
-color: rgb(255, 255, 255);
+color: #2a2a2a;
 box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 text-align: center;
+}
+
+#ourmission {
+    border: 2px solid #000000;
+    color: #000000;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    text-align: center;
 }
 
 /* Footer område */
@@ -636,8 +670,6 @@ footer section {
 
 #tabell th{
     padding: 0 12rem;
-    /* padding-left: 12rem;
-    padding-right: 12rem; */
     font-size: 24px;
     margin: auto;
 }
@@ -654,3 +686,37 @@ footer section {
 .oppsummering{
     font-size: 16px;
 }
+
+#forbedrings-liste{
+    list-style:circle;
+}
+
+.skjermbilder{
+    display: flex;
+    flex-direction: column;
+}
+
+.skjermbilder hr {
+    margin-left: 50px;
+}
+
+.skjermbilder p{
+    text-align: left;
+}
+
+#our-mission-endring img{
+    height: 80%;
+    max-width: 70%;
+}
+
+#alt-text-endring img{
+    max-width: 70%;
+}
+
+#meta-beskrivelse img{
+    max-width: 80%;
+}
+
+
+
+

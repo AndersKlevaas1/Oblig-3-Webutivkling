@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Utforsk vårt omfattende utvalg av trendy og komfortable sko for enhver anledning. Oppdag de siste motetrendene og finn det perfekte paret som passer din stil. Kvalitetssko til rimelige priser, levert med lidenskap for mote og skjønnhet. Designet for å gi deg både stil og komfort.">
     <link rel="stylesheet" type="text/css" href="styling/style.css">
     <link rel="stylesheet" href="fonts/fontawesome-free-6.4.2-web/css/all.css">
     <link rel="stylesheet" href="fonts/fontawesome-free-6.4.2-web/css/brands.css">
@@ -12,209 +14,193 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <title>ShoeStore</title>
 </head>
+
 <body>
     <div id="gridContainer">
+
         <header>
-    
-         <nav id="hambur">
-            <a href="index.html"> <i class="fa-solid fa-shoe-prints fa-2x"></i></a>
-                <button id="HamburgerMenu"
-                class="hamburgermenu"><i class="fa-solid fa-bars fa-2x"></i>
+            <nav id="mainNav">
+                <a href="index.html" class="home-link"><i class="fa-solid fa-shoe-prints fa-2x"></i>ShoeStore</a>
+                <button id="HamburgerMenu" class="hamburgermenu" aria-label="Toggle Navigation">
+                    <i class="fa-solid fa-bars fa-2x"></i>
                 </button>
+
+                <ul class="hamburgernav" role="menubar" aria-hidden="true">
+                    <li role="menuitem"><a href="products.html">Utforsk vårt brede utvalg av sko og tilbehør</a></li>
+                    <li role="menuitem"><a href="member.html">Trkk her for å bli medlem!</a></li>
+                    <li><a href="analyse.html">SEO-Analyse</a></li>
+                </ul>
+
                 
-            <ul class="hamburgernav">
-                <li><a href="products.html">Produkter</a></li>
-                <li><a href="member.html">Bli medlem</a></li>
-                <li><a href="analyse.html">SEO Analyse</a></li>
-            </ul>
 
-            <h1 id="ShoeStore"><a href="index.html">ShoeStore</a></h1>
-    
-            <div id="nav-icons">
-                 
-                    <i class="fa-solid fa-magnifying-glass fa-2x"></i>
-    
-                    <a href="member.html"><i class="fa-regular fa-user fa-2x"></i></a>
-                    
-                    <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                <div id="nav-icons">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a>
+                    <a  href="member.html"><i class="fa-regular fa-user fa-2x"></i></a>
+                   <a href="#"><i class="fa-solid fa-cart-shopping fa-2x"></i></a>
+                </div>
+            </nav>
+            <div id="breadcrumbs">
+                <a href="index.html">Hjem</a> › <a href="products.html">Produkter</a> › Her er du nå!
             </div>
-        </nav>
-    </header>
-<main>
-    <section id="category">
-        <ul>
-            <li><a href="products.html">Herre</a></li>
-            <li><a href="products.html">Dame</a></li>
-            <li><a href="products.html">Barn</a></li>
-        </ul>
-    </section>
-<section class="mobile">
+        </header>
 
+        <main>
 
- 
-     <section id="velkommen">
-        <section>
-            <h1>Nyhet!</h1>
-            <p>Sjekk ut vår helt nyeste</p>
-            <p>sko-kolleksjon!</p>
-        </section>
-        <img id="velkommenbilde" src="img/Oransje-sko-forside.jpg" alt="Oransje sko på tregulv. bildet er generert av https://gencraft.com/generate">
-    </section>
-
-        <section id="hostsko">
-        <p >Nye sko til høsten?</p>
-        <p>699kr</p>
-        </section>
-
-     <section id="productto">
-        <section class="producttext2">
-            <img src="img/Grønne-sko-forside.jpg" alt="Grønne støvler på display. bildet er generert av https://gencraft.com/generate">
-            
-
-            <section class="producttext">
-                <p>Grønne lærsko, perfekt for regnvær!</p>
-                <p>599kr</p>
+            <section id="category">
+                <ul>
+                    <li><a href="products.html" alt="Lenke for Herrekler">Herre</a></li>
+                    <li><a href="#" alt="Lenke for Dame-kler">Dame</a></li>
+                    <li><a href="#" alt="Lenke for barnekler">Barn</a></li>
+                </ul>
             </section>
-        </section>
 
-            <section class="producttext3">
-                <img src="img/Blå-sneakers-forside.jpg" alt="Blå joggesko på display. bildet er generert av https://gencraft.com/generate">
+            <section class="mobile">
 
-                <section class="producttext">
-                    <p><a href="products.html">Trykk her for å vite mer om den nye joggesko-kolleksjonen!</a></p>
-                    <p>499-1599kr</p>
+                <section id="velkommen">
+                    <div>
+                        <h1>Nyhet!</h1>
+                        <p>Sjekk ut vår helt nyeste</p>
+                        <p>sko-kolleksjon!</p>
+                    </div>
+                    <img id="velkommenbilde" src="img/Oransje-sko-forside.jpg" alt="Oransje sko på tregulv. bildet er generert av https://gencraft.com/generate">
                 </section>
+
+                <section id="hostsko">
+                    <p>Nye sko til høsten?</p>
+                    <p>699kr</p>
+                </section>
+
+                <section id="productto">
+                    <article class="producttext2">
+                        <img src="img/Grønne-sko-forside.jpg" alt="Grønne støvler på display. bildet er generert av https://gencraft.com/generate">
+                        <section class="producttext">
+                            <p>Grønne lærsko, perfekt for regnvær!</p>
+                            <p>599kr</p>
+                        </section>
+                    </article>
+
+                    <article class="producttext3">
+                        <img src="img/Blå-sneakers-forside.jpg" alt="Blå joggesko på display. bildet er generert av https://gencraft.com/generate">
+                        <section class="producttext">
+                            <p><a href="products.html">Trykk her for å vite mer om den nye joggesko-kolleksjonen!</a></p>
+                            <p>499-1599kr</p>
+                        </section>
+                    </article>
+                </section>
+
             </section>
-    </section>  
 
+            <!-- DESKTOP -->
 
-</section>
+            <section class="desktop">
 
-    <!-- DESKTOP -->
+                <div id="allebilder">
+                    <section class="bilder4">
 
-    <section class="desktop">
+                        <section id="newarrivals" alt="Seksjon for ny kolleksjon">
+                            <h2>Vår nye kolleksjon!</h2>
+                        </section>
 
-<div id="allebilder">
-    <section class="bilder4">
+                        <section class="tocolumns">
+                            <section class="column1">
+                                <img src="img/Grønne-joggesko-pc.jpg" alt="Grønne joggesko i butikk på display bildet. er generert av https://gencraft.com/generate">
+                                <p>599kr</p>
+                                <img src="img/Blå-sneakers-pc.jpg" alt="Blå joggesko i butikk på display bildet. er generert av https://gencraft.com/generate">
+                                <p>299kr</p>
+                            </section>
 
-        <section id="newarrivals">
-        <h2>Vår nye kolleksjon!</h2>
-        </section>
-            <section class="tocolumns">
-                <section class="column1">
-                    <img src="img/Grønne-joggesko-pc.jpg" alt="Grønne joggesko i butikk på display bildet. er generert av https://gencraft.com/generate">
-                    <p>599kr</p>
-                    <img src="img/Blå-sneakers-pc.jpg" alt="Blå joggesko i butikk på display bildet. er generert av https://gencraft.com/generate">
-                    <p>299kr</p>
-                </section>
-    
-        
-                <section class="column2">
-                    <img src="img/Oransje-joggesko-pc.jpg" alt="Oransje joggesko i butikk på display. bildet er generert av https://gencraft.com/generate">
-                    <p>399kr</p>
-                    <img src="img/Gul-sneaker-display.jpg" alt="Gule joggesko i butikk på display. bildet er generert av https://gencraft.com/generate">
-                    <p>349kr</p>
-                </section>
+                            <section class="column2">
+                                <img src="img/Oransje-joggesko-pc.jpg" alt="Oransje joggesko i butikk på display. bildet er generert av https://gencraft.com/generate">
+                                <p>399kr</p>
+                                <img src="img/Gul-sneaker-display.jpg" alt="Gule joggesko i butikk på display. bildet er generert av https://gencraft.com/generate">
+                                <p>349kr</p>
+                            </section>
+                        </section>
+                    </section>
+
+                    <hr class="skillevegg">
+
+                    <section class="bilder4">
+
+                        <section id="foreveryone">
+                            <h2>For alle!</h2>
+                        </section>
+
+                        <section class="tocolumns">
+                            <section class="column1">
+                                <img src="img/Grønn-unisex-pc.jpg" alt="Grønne unisex joggesko på display i butikk. bildet er generert av https://gencraft.com/generate">
+                                <p>1499kr</p>
+                                <img src="img/Brune-unisex-joggesko.jpg" alt="Brune unisex joggesko på display i butikk. bildet er generert av https://gencraft.com/generate">
+                                <p>499kr</p>
+                            </section>
+
+                            <section class="column2">
+                                <img src="img/Svarte-unisex-joggesko.jpg" alt="Svarte unisex joggesko på display i butikk. bildet er generert av https://gencraft.com/generate">
+                                <p>999kr</p>
+                                <img src="img/Hvite-unisex-joggesko.jpg" alt="Hvite unisex joggesko på display. bildet er generert av https://gencraft.com/generate">
+                                <p>1099kr</p>
+                            </section>
+                        </section>
+                    </section>
+
+                    <hr class="skillevegg">
+
+                    <section id="ourmission">
+                        <h2>ShoeStore</h2>
+                        <section id="hovedtekst">
+                            <h2>I vår skobutikk er vårt oppdrag klart og tydelig:</h2>
+                            <p> Vi ønsker å tilby våre kunder den ultimate opplevelsen av stil, komfort og kvalitet når det gjelder fottøy. </p>
+                            <p>Vår lidenskap for sko gjenspeiles i alt vi gjør, og vi er dedikerte til å oppfylle dine ønsker.</p>
+                            <p>Vi vet at sko ikke bare er tilbehør; de er et uttrykk for din personlige stil og en viktig del av din hverdag. </p>
+                            <p>Uansett om du søker etter det perfekte paret for en spesiell anledning, behagelige sko for en travel hverdag,<br> eller sportsfottøy som hjelper deg med å yte ditt beste, er vår skobutikk stedet å gå.</p>
+                        </section>
+                    </section>
+
+                </div>
+
+                <h2 id="ourproducts">Våre produkter!</h2>
+
+                <div id="productbottom">
+
+                    <section>
+                        <img src="img/Svarte-pensko-herre.jpg" alt="Svarte pen-sko i butikk til menn på display. bildet er generert av https://gencraft.com/generate">
+                        <p>Klassiske svarte pensko til herre</p>
+                        <p>899kr</p>
+                    </section>
+
+                    <section>
+                        <img src="img/Hvite-damesko-på-display.jpg" alt="Hvite høy-hælte sko i butikk på display. bildet er generert av https://gencraft.com/generate">
+                        <p>Hvite klassiske stilett-heler til dame</p>
+                        <p>1199kr</p>
+                    </section>
+
+                    <section>
+                        <img src="img/Blå-barnesko.jpg" alt="Blå og oransje barnesko i butikk på display. bildet er generert av https://gencraft.com/generate">
+                        <p>Små sko til minstemann</p>
+                        <p>699kr</p>
+                    </section>
+                </div>
+
             </section>
-    </section>
+        </main>
 
-    <hr class="skillevegg">
+        <footer>
 
-    <section class="bilder4">
-
-        <section id="foreveryone">
-        <h2>For alle!</h2>
-        </section>
-            <section class="tocolumns">
-                <section class="column1">
-                    <img src="img/Grønn-unisex-pc.jpg" alt="Grønne unisex joggesko på display i butikk. bildet er generert av https://gencraft.com/generate">
-                    <p>1499kr</p>
-                    <img src="img/Brune-unisex-joggesko.jpg" alt="Brune unisex joggesko på display i butikk. bildet er generert av https://gencraft.com/generate">
-                    <p>499kr</p>
-                </section>
-        
-        
-                <section class="column2">
-                    <img src="img/Svarte-unisex-joggesko.jpg" alt="Svarte unisex joggesko på display i butikk. bildet er generert av https://gencraft.com/generate">
-                    <p>999kr</p>
-                    <img src="img/Hvite-unisex-joggesko.jpg" alt="Hvite unisex joggesko på  display. bildet er generert av https://gencraft.com/generate">
-                    <p>1099kr</p>
-                </section>
+            <section id="nyheter">
+                <button id="nyhetsbrev">Klikk her for nyhetsbrev</button>
             </section>
-    </section>
 
+            <section id="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+            </section>
+        </footer>
 
-<hr class="skillevegg">
+    </div>
 
-    
-    <section id="ourmission">
-        <h2>ShoeStore</h2>
-        <section id="hovedtekst">
-        <h2>I vår skobutikk er vårt oppdrag klart og tydelig:</h2>
-        <p> Vi ønsker å tilby våre kunder den ultimate opplevelsen av stil, komfort og kvalitet når det gjelder fottøy. </p>
-        <p>Vår lidenskap for sko gjenspeiles i alt vi gjør, og vi er dedikerte til å oppfylle dine ønsker.</p>
-        <p>Vi vet at sko ikke bare er tilbehør; de er et uttrykk for din personlige stil og en viktig del av din hverdag. </p>
-        <p>Uansett om du søker etter det perfekte paret for en spesiell anledning, behagelige sko for en travel hverdag,<br> eller sportsfottøy som hjelper deg med å yte ditt beste, er vår skobutikk stedet å gå.</p>
-        </section>
-    </section>
-    
-</div>
-
-    <h2 id="ourproducts">Våre produkter!</h2>
-
-<div id="productbottom">
-
-    <section>
-    <img src="img/Svarte-pensko-herre.jpg" alt="Svarte pen-sko i butikk til menn på display. bildet er generert av https://gencraft.com/generate">
-        <p>Klassiske svarte pensko til herre</p>
-        <p>899kr</p>
-    </section>
-
-    <section>
-        <img src="img/Hvite-damesko-på-display.jpg" alt="Hvite høy-hælte sko i butikk på display. bildet er generert av https://gencraft.com/generate">
-        <p>Hvite klassiske stilett-heler til dame</p>
-        <p>1199kr</p>
-    </section> 
-
-    <section>
-        <img src="img/Blå-barnesko.jpg" alt="Blå og oransje barnesko i butikk på display. bildet er generert av https://gencraft.com/generate">
-        <p>Små sko til minstemann</p>
-        <p>699kr</p>
-    </section>
-</div>
-
-</section>
-    </main>
-    <footer>
-        
-        <section id="nyheter">
-            <button id="nyhetsbrev">Klikk her for nyhetsbrev</button>
-        </section>
-        
-        <section id="icons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-x-twitter"></i>
-        </section>
-    </footer>
-    
-</div>
-
-<script>
-    let x = document.querySelector(".hamburgernav")
-  let hamburgerButton = document.getElementById("HamburgerMenu")
-  
-  hamburgerButton.addEventListener("click", (e) => {
-      if (x.style.display === "block") {
-          x.style.display = "none"
-      } else {
-          x.style.display = "block"
-      }
-  })
-
-
-  
-      </script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>

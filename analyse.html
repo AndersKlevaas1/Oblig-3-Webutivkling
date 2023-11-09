@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,23 +13,33 @@
     <title>SEO-Analyse</title>
 </head>
 <body>
-    <header>
-    
-        <nav id="hambur">
-           <a href="index.html"> <i class="fa-solid fa-shoe-prints fa-2x"></i></a>
-               <button id="HamburgerMenu"
-               class="hamburgermenu"><i class="fa-solid fa-bars fa-2x"></i>
-               </button>
-               
-           <ul class="hamburgernav">
-               <li><a href="products.html">Produkter</a></li>
-               <li><a href="member.html">Bli medlem</a></li>
-               <li><a href="seoAnalyse.html">SEO Analyse</a></li>
-           </ul>
+    <div id="gridContainer">
 
-           <h1 id="ShoeStore"><a href="index.html">ShoeStore</a></h1>
-       </nav>
-    </header>
+        <header>
+            <nav id="mainNav">
+                <a href="index.html" class="home-link"><i class="fa-solid fa-shoe-prints fa-2x"></i>ShoeStore</a>
+                <button id="HamburgerMenu" class="hamburgermenu" aria-label="Toggle Navigation">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </button>
+
+                <ul class="hamburgernav" role="menubar" aria-hidden="true">
+                    <li role="menuitem"><a href="products.html">Utforsk vårt brede utvalg av sko og tilbehør</a></li>
+                    <li role="menuitem"><a href="member.html">Trkk her for å bli medlem!</a></li>
+                    <li><a href="analyse.html">SEO-Analyse</a></li>
+                </ul>
+
+                
+
+                <div id="nav-icons">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a>
+                    <a  href="member.html"><i class="fa-regular fa-user fa-2x"></i></a>
+                   <a href="#"><i class="fa-solid fa-cart-shopping fa-2x"></i></a>
+                </div>
+            </nav>
+            <div id="breadcrumbs">
+                <a href="index.html">Hjem</a> › <a href="products.html">Produkter</a> › Her er du nå!
+            </div>
+        </header>
 <main>
     <h1>Analyse av nettbutikk</h1>
 
@@ -177,27 +187,69 @@
     <p class="oppsummering">Lighthouse er veldig effektivt til å vite de forskjellige scorene på nettsiden din og for å gi deg en forståelse av hvor du ligger ann. <br>
     Men chat-GPT og WebAim er mye bedre dersom du vil ha en dypere forståelse av feilene i nettsiden og vite hvordan du kan optimalisere siden din.</p>
 
+    
     <section>
-        <h2 class="header-analyse">Etter forbedringstiltak</h2>
+        <h2 class="header-analyse">Forbedringstiltak-liste</h2>
+        <ul id="forbedrings-liste">
+            <li>Gitt Hamburgermenyen Aria-rollen og oppdatert script til at aria blir expanded for tastatur og skjermleser-brukere</li>
+            <li>Endret strukturen i HTML til en mer semtantisk struktur, endringer i Header, Nav, Main og footer.</li>
+            <li>Oppdatert hamburger-menyen</li>
+            <li>Endret farge og tekst i hamburger-menyen til en mer generisk lenketekst og farge.</li>
+            <li>Lagt til en brødsmulesti, for å hjelpe SEO til å forstå nettsiden hierarki.</li>
+            <li>Flyttet js til en egen mappe "main.js".</li>
+            <li>Lagt inn en omfattende meta-beskrivelse av nettsiden, slik at kunden vet hva de kan forvente av nettsiden.</li>
+            <li>Lagt inn linker på iconer (Dette vil ikke gjør noe akkurat nå, da vi ikke skal lage flere enn 3 sider)</li>
+            <li>Lagt inn tekst på logoen, da webaim sa at dette manglet.</li>
+            <li>Endret grå-fargen på forsiden, slik at lesbarheten er bedre for de med nedsatt syn.</li>
+            <li>Endret at kun "Herre" knappen viser til produkter, da dette ga error i webaim</li>
+        </ul>
     </section>
+
+    <section class="skjermbilder">
+        <section id="our-mission-endring">
+            <img src="img/our-mission-oppdatering.png" alt="bilde av oppdatert versjon av our-Mission på forsiden">
+            <p>Our Mission endringen</p>
+        </section>
+        <hr>
+        <section id="nav-bar-endring">
+            <img src="img/nav-bar-forbedring.png" alt="Bilde av oppdatert versjon av nav-bar">
+            <p>Hamburger meny, brødsmulesti og navbar endringene.</p>
+        </section>
+        <hr>
+        <section id="knapp-endring">
+            <img src="img/knapp-endring.png" alt=" Bilde av oppdatert versjon av knappene i høyre-hjørne">
+            <p>Gitt knappene lenker.</p>
+        </section>
+    </section>
+    
+    <section class="skjermbilder">
+        <hr>
+        <section id="alt-text-endring">
+            <img src="img/alt-text-endring.png" alt="bilde av oppdatert tilhørende alt-tekster">
+            <p>Lagt til flere alt-tekster</p>
+            <hr>
+        </section>
+        
+        <section id="meta-beskrivelse">
+            <img src="img/meta-beskrivelse.png" alt="Bilde av tillagt meta-beskrivelse om selve nettsiden">
+            <p>Lagt til en meta-description til nettbutikken.</p>
+        </section>
+        <hr>
+        <section id="category-link">
+            <img src="img/category-link.png" alt="Bilde over hvor kategoriene er lenket">
+            <p>Kun lenket en av kategoriene til products, WebAim sa ifra om en alert.</p>
+        </section>
+        <hr>
+    </section>
+
+
+
+
 </main>
-<footer>
+    <footer>
 
-</footer>
-
-
-
-<script>
-    let x = document.querySelector(".hamburgernav")
-  let hamburgerButton = document.getElementById("HamburgerMenu")
-  
-  hamburgerButton.addEventListener("click", (e) => {
-      if (x.style.display === "block") {
-          x.style.display = "none"
-      } else {
-          x.style.display = "block"
-      }
-  })
-      </script>
+    </footer>
+</div>
+<script src="js/main.js"></script>
 </body>
 </html>

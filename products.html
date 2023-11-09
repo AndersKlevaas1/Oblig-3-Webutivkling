@@ -14,33 +14,32 @@
 </head>
 <body>
     <div id="gridContainer">
-        <header>
-    
-         <nav id="hambur">
-            <a href="index.html"> <i class="fa-solid fa-shoe-prints fa-2x"></i></a>
-                <button id="HamburgerMenu"
-                class="hamburgermenu"><i class="fa-solid fa-bars fa-2x"></i>
-                </button>
-                
-            <ul class="hamburgernav">
-                <li><a href="products.html">Produkter</a></li>
-                <li><a href="member.html">Bli medlem</a></li>
-                <li><a href="analyse.html">SEO Analyse</a></li>
-            </ul>
 
-            <h1 id="ShoeStore"><a href="index.html">ShoeStore</a></h1>
-    
-            <div id="nav-icons">
-                 
-                    <i class="fa-solid fa-magnifying-glass fa-2x"></i>
-    
-                    <a href="member.html"><i class="fa-regular fa-user fa-2x"></i></a>
-                    
-                    <i class="fa-solid fa-cart-shopping fa-2x"></i>
-        
+        <header>
+            <nav id="mainNav">
+                <a href="index.html" class="home-link"><i class="fa-solid fa-shoe-prints fa-2x"></i>ShoeStore</a>
+                <button id="HamburgerMenu" class="hamburgermenu" aria-label="Toggle Navigation">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </button>
+
+                <ul class="hamburgernav" role="menubar" aria-hidden="true">
+                    <li role="menuitem"><a href="products.html">Utforsk vårt brede utvalg av sko og tilbehør</a></li>
+                    <li role="menuitem"><a href="member.html">Trkk her for å bli medlem!</a></li>
+                    <li><a href="analyse.html">SEO-Analyse</a></li>
+                </ul>
+
+                
+
+                <div id="nav-icons">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a>
+                    <a  href="member.html"><i class="fa-regular fa-user fa-2x"></i></a>
+                   <a href="#"><i class="fa-solid fa-cart-shopping fa-2x"></i></a>
                 </div>
-        </nav>
-    </header>
+            </nav>
+            <div id="breadcrumbs">
+                <a href="index.html">Hjem</a> › <a href="products.html">Produkter</a> › Her er du nå!
+            </div>
+        </header>
 </div>
 <main>
     <section id="category">
@@ -215,17 +214,7 @@
 </footer>
 
       
- <script>
-    let x = document.querySelector(".hamburgernav")
-    let hamburgerButton = document.getElementById("HamburgerMenu")
-          
-    hamburgerButton.addEventListener("click", (e) => {
-        if (x.style.display === "block") {
-             x.style.display = "none"
-         } else {
-             x.style.display = "block"
-         }
-    })
-  </script>
+<script src="js/main.js"></script>
+
 </body>
 </html>
