@@ -114,7 +114,6 @@ button, #HamburgerMenu{
 
 #nav-icons {
     position: fixed;
-    
     right: 0;
     padding: 1rem; 
     display: flex;
@@ -161,7 +160,8 @@ nav i {
     width: 1rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     padding: 1rem;
-    background-color: lightgray;
+    background-color: rgb(255, 111, 0);
+    color: white;
 }
 
 #category li{
@@ -232,7 +232,8 @@ nav i {
 }
 
 .register-button {
-    background-color: #00ff00;
+    background-color: #00ff1e;
+    color: #ff0000;
 }
 
 .benefits {
@@ -435,7 +436,7 @@ main h1 {
 }
 
 #nyhetsbrev { 
-    background-color: #86ddf3;
+    background-color: #0c343e;
 }
 
 product p {
@@ -564,6 +565,8 @@ footer section {
         display: block !important; 
     }
 }
+
+
 
 /* Analyse.html */
 #statestikk{
