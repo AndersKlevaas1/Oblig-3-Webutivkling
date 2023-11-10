@@ -720,11 +720,31 @@ footer section {
 
 #nyttResultat{
     display: flex;
+    justify-content: center;
+
 }
 
 #nyttResultat img{
-    width: 90%;
+    max-width: 90%;
     height: 80%;
+    margin-left: 25px;
+    text-align: center;
 }
 
+#nyttResultatWebaim{
+    display: flex;
+    margin-top: 75px;
+    justify-content: center;
+}
 
+#nyttResultatWebaim img {
+    max-width: 90%;
+    height: 80%;
+    margin-left: 25px;
+    text-align: center;
+}
+
+#Oppsummering-endringer{
+    text-align: left;
+    font-size: 18px;
+}
