@@ -3,12 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Utforsk vårt omfattende utvalg av trendy og komfortable sko for enhver anledning. Oppdag de siste motetrendene og finn det perfekte paret som passer din stil. Kvalitetssko til rimelige priser, levert med lidenskap for mote og skjønnhet. Designet for å gi deg både stil og komfort.">
-   <!-- Chat-GPT anbefalte denne beskrielsen av nettstedet -->
+    <meta name="description" content="En dyp SEO-Analyse av ShoeStore skobutikk. Skobutikken som passer alle sammen.">
+    <!-- Chat-GPT anbefalte denne beskrielsen av nettstedet -->
     <meta name="keywords" content="Shoes, Sko, Butikk, Boots, Sandaler, Pensko, Barnesko, Støvletter">
     <meta property="og:title" content="ShoeStore">
     <meta property="og:url" content="https://itstud.hiof.no/~anderkl/Oblig-3-Webutivkling/index.html">
     <meta name="author" content="Anders Klevaas">
+    <!-- Meta-tags for facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://itstud.hiof.no/~anderkl/Oblig-3-Webutivkling/img/Gr%C3%B8nne-joggesko-pc.jpg">
+    <meta property="og:image:alt" content="Grønne joggesko som passer alle!">
+    <meta property="og:site_name" content="ShoeStore">
+<!-- meta-tags for instagram -->
+    <meta property="og:instagram:shoeStore" content="@ShoeStoreInstagram">
+    <meta property="og:instagram:url" content="https://www.instagram.com/ShoeStoreInstagram/">
+    <!-- Link-rel -->
     <link rel="stylesheet" type="text/css" href="styling/style.css">
     <link rel="stylesheet" href="fonts/fontawesome-free-6.4.2-web/css/all.css">
     <link rel="stylesheet" href="fonts/fontawesome-free-6.4.2-web/css/brands.css">
@@ -16,22 +25,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    <title>Produkter</title>
+    <title>Alle typer sko for alle typer mennesker</title>
 </head>
 <body>
     <div id="gridContainer">
 
         <header>
             <nav id="mainNav">
-                <a href="index.html" class="home-link" alt="Link til forsiden"><i class="fa-solid fa-shoe-prints fa-2x"></i>ShoeStore</a>
-                <button id="HamburgerMenu" class="hamburgermenu" aria-label="Toggle Navigation" alt="Knapp for hamburger-menyen">
+                <a href="index.html" class="home-link"><i class="fa-solid fa-shoe-prints fa-2x"></i>ShoeStore</a>
+                <button id="HamburgerMenu" class="hamburgermenu" aria-label="Toggle Navigation" >
                     <i class="fa-solid fa-bars fa-2x"></i>
                 </button>
 
-                <ul class="hamburgernav" role="menubar" aria-hidden="true" alt="Hamburger meny">
-                    <li role="menuitem"><a href="products.html" alt="Link til produktsiden">Utforsk vårt brede utvalg av sko og tilbehør</a></li>
-                    <li role="menuitem"><a href="member.html" alt="Link til medlem-siden">Trkk her for å bli medlem!</a></li>
-                    <li><a href="analyse.html" alt="link til SEO-analyse">SEO-Analyse</a></li>
+                <ul class="hamburgernav" role="menubar" aria-hidden="true">
+                    <li role="menuitem"><a href="products.html" >Utforsk vårt brede utvalg av sko og tilbehør</a></li>
+                    <li role="menuitem"><a href="member.html" >Trkk her for å bli medlem!</a></li>
+                    <li><a href="analyse.html" >SEO-Analyse</a></li>
                 </ul>
 
                 <div id="nav-icons">
@@ -45,26 +54,30 @@
     </div>
     <main>
     <div id="breadcrumbs">
-        <a href="index.html" alt="Brødsmulesti med knapp til hjemsiden">Hjem</a> › <a href="products.html" alt="Brødsmulesti med knapp til produkter">Produkter</a> › Her er du nå!
+        <a href="index.html">Hjem</a> › <a href="products.html" >Produkter</a> › Her er du nå!
     </div>
     <section id="category">
         <ul>
-            <li><a href="products.html" alt="Knapp til herreavdeling">Herre</a></li>
-            <li><a href="products.html" alt="Knapp til dameavdeling">Dame</a></li>
-            <li><a href="products.html" alt="Knapp til barneavdeling">Barn</a></li>
+            <li><a href="products.html" >Herre</a></li>
+            <li><a href="products.html" >Dame</a></li>
+            <li><a href="products.html" >Barn</a></li>
         </ul>
     </section>
     <section class="mobileproduct">
-
         
     <section id="product-flex">
         <section>
                 <h2>Det nyeste!</h2>
         </section>
-        <section class="new-arrival">
-            <img src="img/Svart-løpesko-herre.jpg" alt="Svart løpesko for menn i butikk på display. bildet er generert av https://gencraft.com/generate ">
-            <p>Få fart på løpingen med vår helt nye løpesko MAX</p>
-            <p>1999kr</p>
+        <section class="new-arrival" itemscope itemtype="http://schema.org/Product">
+            <img itemprop="image" src="img/Svart-løpesko-herre.jpg" alt="Svart løpesko for menn i butikk på display. bildet er generert av https://gencraft.com/generate ">
+            <p itemprop="name">Få fart på løpingen med vår helt nye løpesko MAX</p>
+            <p itemprop="price">1999kr</p>
+            <section itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <meta itemprop="price" content="1999">
+                <meta itemprop="priceCurrency" content="NOK">
+                <meta itemprop="availability" content="http://schema.org/InStock">
+            </section>
         </section>
     
         <section id="popular">
@@ -73,27 +86,37 @@
     
     <section class="double">    
 
-        <section class="bilde1">
-            <img src="img/fargerike-joggesko-unisex.jpg" alt="Fargerike joggesko for unisex i butikk på display. bildet er generert av https://gencraft.com/generate">
-            <p>Bli sett med de helt nye joggeskoene fra SuperShoes!</p>
-            <p>599kr</p>
+        <section class="bilde1" itemscope itemtype="http://schema.org/Product">
+            <img itemprop="image" src="img/fargerike-joggesko-unisex.jpg" alt="Fargerike joggesko for unisex i butikk på display. bildet er generert av https://gencraft.com/generate">
+            <p itemprop="name">Bli sett med de helt nye joggeskoene fra SuperShoes!</p>
+            <p itemprop="price">599kr</p>
+            <section itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <meta itemprop="price" content="599">
+                <meta itemprop="priceCurrency" content="NOK">
+                <meta itemprop="availability" content="http://schema.org/InStock">
+            </section>
         </section>
        
         
 
-        <section class="bilde2">
-            <img src="img/Høye-støvletter-til-kvinne.jpg" alt="Brune høye støvletter til dame i snø. bildet er generert av https://gencraft.com/generate">
-            <p>Frys ikke mer, med disse gode støvlettene!</p>
-            <p>899kr</p>
+        <section class="bilde2" itemscope itemtype="http://schema.org/Product">
+            <img itemprop="image" src="img/Høye-støvletter-til-kvinne.jpg" alt="Brune høye støvletter til dame i snø. bildet er generert av https://gencraft.com/generate">
+            <p itemprop="name">Frys ikke mer, med disse gode støvlettene!</p>
+            <p itemprop="price">899kr</p>
+            <section itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <meta itemprop="price" content="899">
+                <meta itemprop="priceCurrency" content="NOK">
+                <meta itemprop="availability" content="http://schema.org/InStock">
+            </section>
         </section>
         
         
     </section>
 
         <ul>
-            <li><a href="index.html" alt="Link til hovedsiden">Populært nå!</a></li>
-            <li><a href="products.html" alt="Link til produktsiden">Alle produkter!</a></li>
-            <li><a href="member.html" alt="Link til medlemsiden">Bli medlem!</a></li>
+            <li><a href="index.html" >Populært nå!</a></li>
+            <li><a href="products.html" >Alle produkter!</a></li>
+            <li><a href="member.html" >Bli medlem!</a></li>
         </ul>
         <p>Ønsker du å få tilsendt ekslusive tilbud på mail? Eller vite når vi har supergode salg på nettsiden? </p>
         <p>Trykk på knappen under og registrer deg på nyhetsbrev!</p>
@@ -109,99 +132,137 @@
 
     <form class="vintage">
         <label for="farger">Farger:</label>
-        <select name="farger" id="farger" alt="Tabell for å velge farger">
+        <select name="farger" id="farger">
             <option value="#" hidden>Farger</option>
-            <option value="blaa" alt="Farge blå">Blå</option>
-            <option value="groon" alt="Farge grønn">Grønn</option>
-            <option value="gul" alt="Farge gul">Gul</option>
-            <option value="rosa" alt="Farge rosa">Rosa</option>
-            <option value="nocolor" alt="ingen farge">Alle</option>
+            <option value="blaa">Blå</option>
+            <option value="groon">Grønn</option>
+            <option value="gul">Gul</option>
+            <option value="rosa">Rosa</option>
+            <option value="nocolor">Alle</option>
         </select>
     
         <label for="pris">Pris:</label>
-        <select name="pris" id="pris" alt="Tabell for å velge pris">
+        <select name="pris" id="pris">
             <option value="#" hidden>Pris</option>
-            <option value="50" alt="50 til 100 kroner">50kr-150kr</option>
-            <option value="150" alt="150 til 250 kroner">150kr-250kr</option>
-            <option value="250" alt="250 til 500 kroner">250kr-500kr</option>
-            <option value="500" alt="500 til 1000 kroner">500kr-1000kr</option>
-            <option value="1000" alt="Mer enn 1000 kroner">1000kr+</option>
-            <option value="plain" alt="Alle prisklasser">Alle</option>
+            <option value="50" >50kr-150kr</option>
+            <option value="150" >150kr-250kr</option>
+            <option value="250" >250kr-500kr</option>
+            <option value="500" >500kr-1000kr</option>
+            <option value="1000">1000kr+</option>
+            <option value="plain">Alle</option>
         </select>
     
         <label for="monster">Mønster:</label>
-        <select name="monster" id="monster" alt="Tabell for å velge mønster">
+        <select name="monster" id="monster">
             <option value="#" hidden>Mønster</option>
-            <option value="ruter" alt="Rutete mønster">Ruter</option>
-            <option value="streker" alt="Stripete mønster">Streker</option>
-            <option value="sirkler" alt="Sirklulært mønster">Sirkler</option>
-            <option value="parallelogram" alt="Parallelogram mønster">Parallelogram</option>
-            <option value="plain" alt="alle mønstre">Alle</option>
+            <option value="ruter" >Ruter</option>
+            <option value="streker">Streker</option>
+            <option value="sirkler" >Sirkler</option>
+            <option value="parallelogram" >Parallelogram</option>
+            <option value="plain" >Alle</option>
         </select>
     
         <label for="storrelse">Størrelse:</label>
-        <select name="storrelse" id="storrelse" alt="Størrelse på skoene">
+        <select name="storrelse" id="storrelse">
             <option value="#" hidden>Størrelse</option>
-            <option value="20" alt="25 til 30">25-30</option>
-            <option value="25" alt="30 til 35">30-35</option>
-            <option value="30" alt="35 til 40">35-40</option>
-            <option value="45" alt="40 til 45 plus">40-45+</option>
-            <option value="plain" alt="Alle størrelser">Alle</option>
+            <option value="20">20-30</option>
+            <option value="25" >30-35</option>
+            <option value="30" >35-40</option>
+            <option value="45" >40-45+</option>
+            <option value="plain">Alle</option>
         </select>
     </form>
-    
-
 
     <section id="rad4">
-            <section>
-                <img src="img/hvite-boots-for-dame.jpg" alt="Høye hvite støvletter for dame. bildet er generert av https://gencraft.com/generate">
-                <p>Hvite boots til dame</p>
-                <p>1899kr</p>
+            <section itemscope itemtype="http://schema.org/Product">
+                <img itemprop="image" src="img/hvite-boots-for-dame.jpg" alt="Høye hvite støvletter for dame. bildet er generert av https://gencraft.com/generate">
+                <p itemprop="name">Hvite boots til dame</p>
+                <p itemprop="price">1899kr</p>
+                <section itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <meta itemprop="price" content="1899">
+                    <meta itemprop="priceCurrency" content="NOK">
+                    <meta itemprop="availability" content="http://schema.org/InStock">
+                </section>
             </section>
 
-            <section>
-                <img src="img/brune-boots-for-men.jpg" alt="Lave brune støvletter for menn. bildet er generert av https://gencraft.com/generate">
-                <p>Brune boots til menn</p>
-                <p>1299kr</p>
+            <section itemscope itemtype="http://schema.org/Product">
+                <img itemprop="image" src="img/brune-boots-for-men.jpg" alt="Lave brune støvletter for menn. bildet er generert av https://gencraft.com/generate">
+                <p itemprop="name">Brune boots til menn</p>
+                <p itemprop="price">1299kr</p>
+                <section itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <meta itemprop="price" content="1299">
+                    <meta itemprop="priceCurrency" content="NOK">
+                    <meta itemprop="availability" content="http://schema.org/InStock">
+                </section>
             </section>
 
-            <section>
-                <img src="img/Blå-pensko-menn.jpg" alt="Blå pen-sko til menn på display. bildet er generert av https://gencraft.com/generate">
-                <p>Blå pensko til menn</p>
-                <p>999kr</p>
+            <section itemscope itemtype="http://schema.org/Product">
+                <img itemprop="image" src="img/Blå-pensko-menn.jpg" alt="Blå pen-sko til menn på display. bildet er generert av https://gencraft.com/generate">
+                <p itemprop="name">Blå pensko til menn</p>
+                <p itemprop="price">999kr</p>
+                <section itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <meta itemprop="price" content="999">
+                    <meta itemprop="priceCurrency" content="NOK">
+                    <meta itemprop="availability" content="http://schema.org/InStock">
+                </section>
             </section>
 
-            <section>
-                <img src="img/Svarte-pensko-til-dame.jpg" alt="Svarte pensko til dame med blonder. bildet er generert av https://gencraft.com/generate">
-                <p>Pensko med blonder til dame</p>
-                <p>1499kr</p>
+            <section itemscope itemtype="http://schema.org/Product">
+                <img itemprop="image" src="img/Svarte-pensko-til-dame.jpg" alt="Svarte pensko til dame med blonder. bildet er generert av https://gencraft.com/generate">
+                <p itemprop="name">Pensko med blonder til dame</p>
+                <p itemprop="price">1499kr</p>
+                <section itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <meta itemprop="price" content="1499">
+                    <meta itemprop="priceCurrency" content="NOK">
+                    <meta itemprop="availability" content="http://schema.org/InStock">
+                </section>
             </section>
 
     </section>
 
     <section id="rad4to">
-            <section>
-                <img src="img/Sandaler-til-menn.jpg" alt="Brune skinn-sandaler til menn. bildet er generert av https://gencraft.com/generate">
-                <p>Brune sandaler til menn</p>
-                <p>749kr</p>
+            <section itemscope itemtype="http://schema.org/Product">
+                <img itemprop="image" src="img/Sandaler-til-menn.jpg" alt="Brune skinn-sandaler til menn. bildet er generert av https://gencraft.com/generate">
+                <p itemprop="name">Brune sandaler til menn</p>
+                <p itemprop="price">749kr</p>
+                <section itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <meta itemprop="price" content="1499">
+                    <meta itemprop="priceCurrency" content="NOK">
+                    <meta itemprop="availability" content="http://schema.org/InStock">
+                </section>
             </section>
 
-            <section>
-                <img src="img/Blinkesko-barn.jpg" alt="Røde skinnsko til barn med blinkelys. bildet er generert av https://gencraft.com/generate">
-                <p>Røde blinkesko til barn</p>
-                <p>1100kr</p>
+            <section itemscope itemtype="http://schema.org/Product">
+                <img itemprop="image" src="img/Blinkesko-barn.jpg" alt="Røde skinnsko til barn med blinkelys. bildet er generert av https://gencraft.com/generate">
+                <p itemprop="name">Røde blinkesko til barn</p>
+                <p itemprop="price">1100kr</p>
+                <section itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <meta itemprop="price" content="1100">
+                    <meta itemprop="priceCurrency" content="NOK">
+                    <meta itemprop="availability" content="http://schema.org/InStock">
+                </section> 
             </section>
 
-            <section>
-                <img src="img/Støvletter-til-barn.jpg" alt="Brune støvletter til barn. bildet er generert av https://gencraft.com/generate">
-                <p>Brune støvletter til barn</p>
-                <p>499kr</p>
+            <section itemscope itemtype="http://schema.org/Product">
+                <img itemprop="image" src="img/Støvletter-til-barn.jpg" alt="Brune støvletter til barn. bildet er generert av https://gencraft.com/generate">
+                <p itemprop="name">Brune støvletter til barn</p>
+                <p itemprop="price">499kr</p>
+                <section itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <meta itemprop="price" content="499">
+                    <meta itemprop="priceCurrency" content="NOK">
+                    <meta itemprop="availability" content="http://schema.org/InStock">
+                </section> 
             </section>
 
-            <section>
-                <img src="img/Rosa-stiletter-dame.jpg" alt="Rosa pensko med stiletter til dame. bildet er generert av https://gencraft.com/generate">
-                <p>Rosa stilett sko til dame</p>
-                <p>1399kr</p>
+            <section itemscope itemtype="http://schema.org/Product">
+                <img itemprop="image" src="img/Rosa-stiletter-dame.jpg" alt="Rosa pensko med stiletter til dame. bildet er generert av https://gencraft.com/generate">
+                <p itemprop="name">Rosa stilett sko til dame</p>
+                <p itemprop="price">1399kr</p>
+                <section itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <meta itemprop="price" content="499">
+                    <meta itemprop="priceCurrency" content="NOK">
+                    <meta itemprop="availability" content="http://schema.org/InStock">
+                </section> 
             </section>
     </section>        
 </section>
@@ -215,10 +276,10 @@
     </section>
     
     <section id="icons">
-        <i class="fa-brands fa-facebook" alt="Ikon med lenke til facebook"></i>
-        <i class="fa-brands fa-instagram" alt="Ikon med lenke til Instagram"></i>
-        <i class="fa-brands fa-twitter" alt="Ikon med lenke til twitter"></i>
-        <i class="fa-brands fa-x-twitter" alt="Ikon med lenke til X"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram" ></i>
+        <i class="fa-brands fa-twitter" ></i>
+        <i class="fa-brands fa-x-twitter" ></i>
     </section>
 </footer>
 

@@ -9,6 +9,17 @@
     <meta property="og:title" content="ShoeStore">
     <meta property="og:url" content="https://itstud.hiof.no/~anderkl/Oblig-3-Webutivkling/index.html">
     <meta name="author" content="Anders Klevaas">
+    <!-- Meta-tags for facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://itstud.hiof.no/~anderkl/Oblig-3-Webutivkling/img/Gr%C3%B8nne-joggesko-pc.jpg">
+    <meta property="og:image:alt" content="Grønne joggesko som passer alle!">
+    <meta property="og:site_name" content="ShoeStore">
+    <!-- https://developers.facebook.com/docs/sharing/webmasters/ -->
+    <!-- meta-tags for instagram -->
+    <meta property="og:instagram:shoeStore" content="@ShoeStoreInstagram">
+    <meta property="og:instagram:url" content="https://www.instagram.com/ShoeStoreInstagram/">
+    <!-- https://css-tricks.com/essential-meta-tags-social-media/ -->
+    <!-- Link-rel -->
     <link rel="stylesheet" type="text/css" href="styling/style.css">
     <link rel="stylesheet" href="fonts/fontawesome-free-6.4.2-web/css/all.css">
     <link rel="stylesheet" href="fonts/fontawesome-free-6.4.2-web/css/brands.css">
@@ -16,11 +27,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    <title>SEO-Analyse</title>
+    <title>SEO-Analyse av ShoeStore</title>
 </head>
 <body>
-    <div id="gridContainer">
-
+    <div id="gridContainer">    
         <header>
             <nav id="mainNav">
                 <a href="index.html" class="home-link"><i class="fa-solid fa-shoe-prints fa-2x"></i>ShoeStore</a>
@@ -329,9 +339,37 @@
     Linker og tekster på ikoner, lables på visse knapper, kontrastendringer, og brødsmulesti. Dette var alle viktige faktorer for å kunne gi nettsiden en bedre score overall. 
     Selv om jeg kan se at Performance ikke er den aller beste, kan dette ordnes med å bytte ut alle bildene til en mindre fil-type, som feks jpg, eller png.</p>
 
+
+    <section id="skjermLeser">
+        <h2 class="forbedrings-liste">Skjermleser</h2>
+        <p>ToggleNavigasjon på hamburgermenyen, sier produkter når jeg trykker på produkter-linken i menyen </p>
+        <p>Leser ikke opp det som er skrevt om shoestore på forsiden</p>
+        <p>Sier "banner banner" når jeg velger linker i headermenyen</p>
+        <p>Ellers så fungerte skjemleseren ganske bra, den leste opp navnet på produktet, forklaringen på bildet, linker og det som trengtes å leses opp.</p>
+    </section>
+
+
+    <h2 class="forbedrings-liste">Microdata og rich results</h2>
+    <section>
+        <img src="img/item-prop-analyse.png" alt="Bilde av koden for rich results og microdata">
+        <!-- Bildet hentet fra koden til skobutikken -->
+        <p>Microdata kode</p>
+    </section>
+
+    <h2 class="forbedrings-liste">META og SOME</h2>
+    <section>
+        <img src="img/meta-tags-facebook.png" alt="Bilde av kode over metatags for facebook og instagram">
+        <p>Lagt inn kode for metatags til facebook og instagram</p>
+    </section>
+
 </main>
     <footer>
-
+        <section id="icons">
+            <i class="fa-brands fa-facebook" ></i>
+            <i class="fa-brands fa-instagram" ></i>
+            <i class="fa-brands fa-twitter" ></i>
+            <i class="fa-brands fa-x-twitter" ></i>
+        </section>
     </footer>
 </div>
 <script src="js/main.js"></script>
