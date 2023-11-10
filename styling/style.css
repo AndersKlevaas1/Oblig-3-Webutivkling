@@ -718,6 +718,13 @@ footer section {
     max-width: 80%;
 }
 
+#nyttResultat{
+    display: flex;
+}
 
+#nyttResultat img{
+    width: 90%;
+    height: 80%;
+}
 
 

@@ -35,13 +35,12 @@
                     <li><a href="analyse.html">SEO-Analyse</a></li>
                 </ul>
 
-                
-
                 <div id="nav-icons">
-                    <a href="#"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a>
-                    <a  href="member.html"><i class="fa-regular fa-user fa-2x"></i></a>
-                   <a href="#"><i class="fa-solid fa-cart-shopping fa-2x"></i></a>
+                    <a href="#" aria-label="Søk"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a>
+                    <a href="member.html" aria-label="Bli medlem"><i class="fa-regular fa-user fa-2x"></i></a>
+                    <a href="#" aria-label="Handlekurv"><i class="fa-solid fa-cart-shopping fa-2x"></i></a>
                 </div>
+                
             </nav>
         </header>
 <main>
@@ -230,6 +229,7 @@
             <li>Lagt inn tekst på logoen, da webaim sa at dette manglet.</li>
             <li>Endret grå-fargen på forsiden, slik at lesbarheten er bedre for de med nedsatt syn.</li>
             <li>Endret at kun "Herre" knappen viser til produkter, da dette ga error i webaim</li>
+            <li>Gitt iconsa skjult aria tekst</li>
         </ul>
     </section>
 
@@ -274,10 +274,40 @@
             <p>Kun lenket en av kategoriene til products, WebAim sa ifra om en alert.</p>
         </section>
         <hr>
+        <section id="category-link">
+            <img src="img/Skjult-tekst-icons.png" alt="Bilde over kode for skjult aria tekst">
+            <!-- Utklipp fra koden i skobutikken -->
+            <p>Gitt aria-lable til iconene for å gi dem en skjult tekst</p>
+        </section>
+        <hr>
     </section>
 
+    <h2 id="forbedrings-liste">Etter forbedringstiltak:</h2>
+    
+    <section id="nyttResultat">
+        <section>
+            <img src="img/etterforbedrings-tiltak-index.png" alt="Bilde av resultatet i lighthouse etter forbedringstiltak">
+            <!-- Bilde fra lighthouse i google -->
+            <p>Resultatene etter forbedringstiltak på member siden. Da de tidligere resultatene var 96, 76, 100, 90 <br>
+            Performance er veldig ustabil og har variert mellom 80-95 flere tester.</p>
+        </section>
 
+        <section>
+            <img src="img/etterforbedrings-tiltak-products.png" alt="Bilde av resultatet i lighthouse etter forbedringstiltak">
+            <!-- Bilde fra lighthouse i google -->
+            <p>Resultatene etter forbedringstiltak på member siden. Da de tidligere resultatene var 79, 71, 100, 90 </p>
+        </section>
 
+        <section>
+            <img src="img/etterforbedrings-tiltak-member.png" alt="Bilde av resulatet i lighthouse etter forbedringstiltak">
+            <!-- Bilde fra lighthouse i google -->
+            <p>Resultatene etter forbedringstiltak på member siden.. Da de tidligere resultatene var 99, 77, 100, 89</p>
+        </section>
+
+        <p></p>
+    </section>
+
+    
 
 </main>
     <footer>
