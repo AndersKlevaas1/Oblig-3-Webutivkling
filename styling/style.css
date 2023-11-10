@@ -79,7 +79,6 @@ button, #HamburgerMenu{
     font-size: 24px; 
     color: #000; 
     margin-top: auto;
-    
 }
 
 .hamburgernav {
@@ -92,7 +91,6 @@ button, #HamburgerMenu{
     align-items: center;
     width: 100%;
 }
-
 
 .hamburgernav a{
     color: #ffffff;
@@ -161,7 +159,7 @@ nav i {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     padding: 1rem;
     background-color: rgb(255, 111, 0);
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 #category li{
