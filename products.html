@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Utforsk vårt omfattende utvalg av trendy og komfortable sko for enhver anledning. Oppdag de siste motetrendene og finn det perfekte paret som passer din stil. Kvalitetssko til rimelige priser, levert med lidenskap for mote og skjønnhet. Designet for å gi deg både stil og komfort.">
+   <!-- Chat-GPT anbefalte denne beskrielsen av nettstedet -->
+    <meta name="keywords" content="Shoes, Sko, Butikk, Boots, Sandaler, Pensko, Barnesko, Støvletter">
+    <meta property="og:title" content="ShoeStore">
+    <meta property="og:url" content="https://itstud.hiof.no/~anderkl/Oblig-3-Webutivkling/index.html">
+    <meta name="author" content="Anders Klevaas">
     <link rel="stylesheet" type="text/css" href="styling/style.css">
     <link rel="stylesheet" href="fonts/fontawesome-free-6.4.2-web/css/all.css">
     <link rel="stylesheet" href="fonts/fontawesome-free-6.4.2-web/css/brands.css">
@@ -18,15 +23,15 @@
 
         <header>
             <nav id="mainNav">
-                <a href="index.html" class="home-link"><i class="fa-solid fa-shoe-prints fa-2x"></i>ShoeStore</a>
-                <button id="HamburgerMenu" class="hamburgermenu" aria-label="Toggle Navigation">
+                <a href="index.html" class="home-link" alt="Link til forsiden"><i class="fa-solid fa-shoe-prints fa-2x"></i>ShoeStore</a>
+                <button id="HamburgerMenu" class="hamburgermenu" aria-label="Toggle Navigation" alt="Knapp for hamburger-menyen">
                     <i class="fa-solid fa-bars fa-2x"></i>
                 </button>
 
-                <ul class="hamburgernav" role="menubar" aria-hidden="true">
-                    <li role="menuitem"><a href="products.html">Utforsk vårt brede utvalg av sko og tilbehør</a></li>
-                    <li role="menuitem"><a href="member.html">Trkk her for å bli medlem!</a></li>
-                    <li><a href="analyse.html">SEO-Analyse</a></li>
+                <ul class="hamburgernav" role="menubar" aria-hidden="true" alt="Hamburger meny">
+                    <li role="menuitem"><a href="products.html" alt="Link til produktsiden">Utforsk vårt brede utvalg av sko og tilbehør</a></li>
+                    <li role="menuitem"><a href="member.html" alt="Link til medlem-siden">Trkk her for å bli medlem!</a></li>
+                    <li><a href="analyse.html" alt="link til SEO-analyse">SEO-Analyse</a></li>
                 </ul>
 
                 
@@ -41,13 +46,13 @@
     </div>
     <main>
     <div id="breadcrumbs">
-        <a href="index.html">Hjem</a> › <a href="products.html">Produkter</a> › Her er du nå!
+        <a href="index.html" alt="Brødsmulesti med knapp til hjemsiden">Hjem</a> › <a href="products.html" alt="Brødsmulesti med knapp til produkter">Produkter</a> › Her er du nå!
     </div>
     <section id="category">
         <ul>
-            <li><a href="products.html">Herre</a></li>
-            <li><a href="products.html">Dame</a></li>
-            <li><a href="products.html">Barn</a></li>
+            <li><a href="products.html" alt="Knapp til herreavdeling">Herre</a></li>
+            <li><a href="products.html" alt="Knapp til dameavdeling">Dame</a></li>
+            <li><a href="products.html" alt="Knapp til barneavdeling">Barn</a></li>
         </ul>
     </section>
     <section class="mobileproduct">
@@ -87,9 +92,9 @@
     </section>
 
         <ul>
-            <li><a href="index.html">Populært nå!</a></li>
-            <li><a href="products.html">Alle produkter!</a></li>
-            <li><a href="member.html">Bli medlem!</a></li>
+            <li><a href="index.html" alt="Link til hovedsiden">Populært nå!</a></li>
+            <li><a href="products.html" alt="Link til produktsiden">Alle produkter!</a></li>
+            <li><a href="member.html" alt="Link til medlemsiden">Bli medlem!</a></li>
         </ul>
         <p>Ønsker du å få tilsendt ekslusive tilbud på mail? Eller vite når vi har supergode salg på nettsiden? </p>
         <p>Trykk på knappen under og registrer deg på nyhetsbrev!</p>
@@ -105,41 +110,41 @@
 
 <form class="vintage">
             
-    <select name="farger" id="farger">
+    <select name="farger" id="farger" alt="Tabell for å velge farger">
         <option value="#" hidden>Farger</option>
-        <option value="blaa">Blå</option>
-        <option value="groon">Grønn</option>
-        <option value="gul">Gul</option>
-        <option value="rosa">Rosa</option>
-        <option value="nocolor">Alle</option>
+        <option value="blaa" alt="Farge blå" >Blå</option>
+        <option value="groon" alt="Farge grønn" >Grønn</option>
+        <option value="gul" alt="Farge gul" >Gul</option>
+        <option value="rosa" alt="Farge rosa" >Rosa</option>
+        <option value="nocolor" alt="ingen farge">Alle</option>
     </select>
 
-    <select name="pris" id="pris">
+    <select name="pris" id="pris" alt="Tabell for å velge pris">
         <option value="#" hidden>Pris</option>
-        <option value="50">50kr-150kr</option>
-        <option value="150">150kr-250kr</option>
-        <option value="250">250kr-500kr</option>
-        <option value="500">500kr-1000kr</option>
-        <option value="1000">1000kr+</option>
-        <option value="plain">Alle</option>
+        <option value="50" alt="50 til 100 kroner">50kr-150kr</option>
+        <option value="150" alt="150 til 250 kroner">150kr-250kr</option>
+        <option value="250" alt="250 til 500 kroner">250kr-500kr</option>
+        <option value="500" alt="500 til 1000 kroner">500kr-1000kr</option>
+        <option value="1000" alt="Mer enn 1000 kroner">1000kr+</option>
+        <option value="plain" alt="Alle prisklasser">Alle</option>
     </select>
 
-    <select name="monster" id="monster">
+    <select name="monster" id="monster" alt="Tabell for å velge mønster">
         <option value="#" hidden>Mønster</option>
-        <option value="ruter">Ruter</option>
-        <option value="streker">Streker</option>
-        <option value="sirkler">Sirkler</option>
-        <option value="parallelogram">Parallelogram</option>
-        <option value="plain">Alle</option>
+        <option value="ruter" alt="Rutete mønster" >Ruter</option>
+        <option value="streker" alt="Stripete mønster" >Streker</option>
+        <option value="sirkler" alt="Sirklulært mønster" >Sirkler</option>
+        <option value="parallelogram" alt="Parallelogram mønster" >Parallelogram</option>
+        <option value="plain" alt="alle mønstre" >Alle</option>
     </select>
 
-    <select name="storrelse" id="storrelse">
+    <select name="storrelse" id="storrelse" alt="Størrelse på skoene">
         <option value="#" hidden>Størrelse</option>
-        <option value="20">25-30</option>
-        <option value="25">30-35</option>
-        <option value="30">35-30</option>
-        <option value="45">40-45+</option>
-        <option value="plain">Alle</option>
+        <option value="20" alt="25 til 30">25-30</option>
+        <option value="25" alt="30 til 35">30-35</option>
+        <option value="30" alt="35 til 40">35-40</option>
+        <option value="45" alt="40 til 45 plus">40-45+</option>
+        <option value="plain" alt="Alle størrelser">Alle</option>
     </select>
 </form>    
 
@@ -207,10 +212,10 @@
     </section>
     
     <section id="icons">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-facebook" alt="Ikon med lenke til facebook"></i>
+        <i class="fa-brands fa-instagram" alt="Ikon med lenke til Instagram"></i>
+        <i class="fa-brands fa-twitter" alt="Ikon med lenke til twitter"></i>
+        <i class="fa-brands fa-x-twitter" alt="Ikon med lenke til X"></i>
     </section>
 </footer>
 
