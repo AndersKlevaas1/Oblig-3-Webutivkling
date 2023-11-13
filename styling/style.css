@@ -613,6 +613,11 @@ footer section {
     text-align: center;
 }
 
+#statestikk img{
+    max-width: 70%;
+    margin-top: 15px;
+}
+
 #hvorfor {
     font-size: 20;
     text-align: center;
@@ -770,5 +775,13 @@ footer section {
 
 #skjermLeser p{
     font-size: 18px;
+}
+
+#updateSEO p{
+    display: flex;
+    position: absolute;
+    margin-bottom: 10px;
+
+
 }
 
