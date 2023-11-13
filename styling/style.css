@@ -625,6 +625,14 @@ footer section {
     padding-bottom: 1rem;
 }
 
+#breadcrumbs a {
+    color: red;
+}
+
+#breadcrumbs {
+    color: red;
+}
+
 #WEBAIM{
     display: flex;
     flex-direction: row;
