@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="En dyp SEO-Analyse av ShoeStore skobutikk. Skobutikken som passer alle sammen.">
-    <!-- Chat-GPT anbefalte denne beskrielsen av nettstedet -->
+    <meta name="description" content="Finn trendy og komfortable sko på ShoeStore - Din online skobutikk. Utforsk vårt brede utvalg av sko, fra joggesko til støvletter.">
     <meta name="keywords" content="Shoes, Sko, Butikk, Boots, Sandaler, Pensko, Barnesko, Støvletter">
-    <meta property="og:title" content="ShoeStore">
+    <meta property="og:title" content="ShoeStore - Din Online Skobutikk">
     <meta property="og:url" content="https://itstud.hiof.no/~anderkl/Oblig-3-Webutivkling/index.html">
     <meta name="author" content="Anders Klevaas">
-    <!-- Meta-tags for facebook -->
+    <!-- Meta-tags for Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://itstud.hiof.no/~anderkl/Oblig-3-Webutivkling/img/Gr%C3%B8nne-joggesko-pc.jpg">
     <meta property="og:image:alt" content="Grønne joggesko som passer alle!">
     <meta property="og:site_name" content="ShoeStore">
-<!-- meta-tags for instagram -->
-    <meta property="og:instagram:shoeStore" content="@ShoeStoreInstagram">
+    <!-- Meta-tags for Instagram -->
+    <meta property="og:instagram:username" content="@ShoeStoreInstagram">
     <meta property="og:instagram:url" content="https://www.instagram.com/ShoeStoreInstagram/">
     <!-- Link-rel -->
     <link rel="stylesheet" type="text/css" href="styling/style.css">
@@ -25,8 +24,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    <title>Alle typer sko for alle typer mennesker</title>
-</head>
+    <title>ShoeStore - Finn populære sko her!</title>
 <body>
     <div id="gridContainer">
 
@@ -38,13 +36,13 @@
                 </button>
 
                 <ul class="hamburgernav" role="menubar" aria-hidden="true">
-                    <li role="menuitem"><a href="products.html" >Utforsk vårt brede utvalg av sko og tilbehør</a></li>
-                    <li role="menuitem"><a href="member.html" >Trkk her for å bli medlem!</a></li>
-                    <li><a href="analyse.html" >SEO-Analyse</a></li>
+                    <li role="menuitem"><a href="products.html" aria-label="Utforsk vårt berede utvalg av sko og tilbehør!" >Utforsk vårt brede utvalg av sko og tilbehør</a></li>
+                    <li role="menuitem"><a href="member.html" aria-label="Trykk her for å bli medlem!">Trkk her for å bli medlem!</a></li>
+                    <li><a href="analyse.html" aria-label="Trykk her for å se vår SEO analyse">SEO-Analyse</a></li>
                 </ul>
 
                 <div id="nav-icons">
-                    <a href="#" aria-label="Søk"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a>
+                    <a href="#" aria-label="Søk her"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a>
                     <a href="member.html" aria-label="Bli medlem"><i class="fa-regular fa-user fa-2x"></i></a>
                     <a href="#" aria-label="Handlekurv"><i class="fa-solid fa-cart-shopping fa-2x"></i></a>
                 </div>
@@ -53,14 +51,14 @@
         </header>
     </div>
     <main>
-    <div id="breadcrumbs">
+    <div id="breadcrumbs" aria-label="Du er nå på hjem > produkter > her er du nå">
         <a href="index.html">Hjem</a> › <a href="products.html" >Produkter</a> › Her er du nå!
     </div>
     <section id="category">
         <ul>
-            <li><a href="products.html" >Herre</a></li>
-            <li><a href="products.html" >Dame</a></li>
-            <li><a href="products.html" >Barn</a></li>
+            <li><a href="products.html" aria-label="Herreavdeling" >Herre</a></li>
+            <li><a href="products.html" aria-label="Dameavdeling" >Dame</a></li>
+            <li><a href="products.html" aria-label="Barneavdeling">Barn</a></li>
         </ul>
     </section>
     <section class="mobileproduct">
@@ -85,7 +83,6 @@
         </section>
     
     <section class="double">    
-
         <section class="bilde1" itemscope itemtype="http://schema.org/Product">
             <img itemprop="image" src="img/fargerike-joggesko-unisex.jpg" alt="Fargerike joggesko for unisex i butikk på display. bildet er generert av https://gencraft.com/generate">
             <p itemprop="name">Bli sett med de helt nye joggeskoene fra SuperShoes!</p>
@@ -97,8 +94,6 @@
             </section>
         </section>
        
-        
-
         <section class="bilde2" itemscope itemtype="http://schema.org/Product">
             <img itemprop="image" src="img/Høye-støvletter-til-kvinne.jpg" alt="Brune høye støvletter til dame i snø. bildet er generert av https://gencraft.com/generate">
             <p itemprop="name">Frys ikke mer, med disse gode støvlettene!</p>
@@ -109,14 +104,11 @@
                 <meta itemprop="availability" content="http://schema.org/InStock">
             </section>
         </section>
-        
-        
     </section>
-
         <ul>
-            <li><a href="index.html" >Populært nå!</a></li>
-            <li><a href="products.html" >Alle produkter!</a></li>
-            <li><a href="member.html" >Bli medlem!</a></li>
+            <li><a href="index.html" aria-label="Populært nå!">Populært nå!</a></li>
+            <li><a href="products.html" aria-label="Alle produkter!">Alle produkter!</a></li>
+            <li><a href="member.html"aria-label="Bli medlem!" >Bli medlem!</a></li>
         </ul>
         <p>Ønsker du å få tilsendt ekslusive tilbud på mail? Eller vite når vi har supergode salg på nettsiden? </p>
         <p>Trykk på knappen under og registrer deg på nyhetsbrev!</p>
@@ -131,7 +123,7 @@
 
 
     <form class="vintage">
-        <label for="farger">Farger:</label>
+        <label for="farger">Velg din stil!</label>
         <select name="farger" id="farger">
             <option value="#" hidden>Farger</option>
             <option value="blaa">Blå</option>
@@ -272,15 +264,16 @@
 <footer>
         
     <section id="nyheter">
-        <button id="nyhetsbrev">Klikk her for nyhetsbrev</button>
+        <button id="nyhetsbrev" aria-label="Klikk her for nyhetsbrev">Klikk her for nyhetsbrev</button>
     </section>
-    
+
     <section id="icons">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram" ></i>
-        <i class="fa-brands fa-twitter" ></i>
-        <i class="fa-brands fa-x-twitter" ></i>
+        <i class="fa-brands fa-facebook" aria-label="Facebook"></i>
+        <i class="fa-brands fa-instagram" aria-label="Instagram"></i>
+        <i class="fa-brands fa-twitter" aria-label="Twitter"></i>
+        <i class="fa-brands fa-x-twitter" aria-label="X"></i>
     </section>
+</footer>
 </footer>
 
       
